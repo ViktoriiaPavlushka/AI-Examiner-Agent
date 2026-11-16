@@ -30,6 +30,39 @@ st.markdown(
     }
 
     .stApp { background: #fcfaf8; color: var(--ink); }
+
+    /* Світлий вигляд незалежно від теми браузера/системи (темний режим) */
+    header[data-testid="stHeader"] { background: #fcfaf8 !important; }
+    header[data-testid="stHeader"] button,
+    header[data-testid="stHeader"] a,
+    header[data-testid="stHeader"] span { color: var(--muted) !important; }
+    div[data-testid="stBottom"], div[data-testid="stBottom"] > div,
+    div[data-testid="stBottomBlockContainer"] { background: #fcfaf8 !important; }
+    section[data-testid="stSidebar"] * { color: var(--ink); }
+    div[data-testid="stTextInputRootElement"] {
+        background: #ffffff !important; border: 1px solid var(--pink-line) !important;
+        border-radius: 6px !important;
+    }
+    div[data-testid="stTextInputRootElement"]:focus-within { border-color: #e48aac !important; }
+    div[data-testid="stTextInput"] input { border: 0 !important; }
+    div[data-testid="stTextInput"] button { background: #ffffff !important; color: var(--muted) !important; }
+    input::placeholder, textarea::placeholder { color: #a8999f !important; opacity: 1; }
+    textarea, input { -webkit-text-fill-color: var(--ink) !important; }
+    textarea::placeholder, input::placeholder { -webkit-text-fill-color: #a8999f !important; }
+    div[data-testid="stChatInput"] > div { background: #ffffff !important; }
+    div[data-testid="stChatInput"] button { background: var(--pink) !important; color: var(--ink) !important; }
+    div[data-testid="stChatMessage"] [data-testid^="stChatMessageAvatar"],
+    div[data-testid="stChatMessage"] > div:first-child {
+        background: var(--pink-soft) !important; color: var(--pink-dark) !important;
+    }
+    div[data-testid="stExpander"] summary, div[data-testid="stExpander"] summary * { color: var(--ink) !important; }
+    div[data-testid="stTooltipIcon"] button,
+    span[data-testid="stTooltipIcon"] button { background: transparent !important; border: 0 !important; }
+    [data-testid="stTooltipIcon"] svg { color: var(--muted) !important; stroke: var(--muted) !important; }
+    div[data-testid="stChatMessage"] [data-testid="stIconMaterial"] {
+        color: var(--pink-dark) !important; opacity: 1 !important;
+    }
+    div[data-testid="stChatMessage"] > div:first-child { border: 1px solid var(--pink-line) !important; }
     .block-container { max-width: 860px; padding-top: 3.2rem; padding-bottom: 3rem; }
     h1, h2, h3, p, label, li, .stMarkdown { color: var(--ink); }
 
@@ -60,7 +93,7 @@ st.markdown(
 
     div[data-testid="stTextInput"] input,
     div[data-testid="stChatInput"] textarea {
-        background: #ffffff; border-radius: 6px; color: var(--ink);
+        background: #ffffff !important; border-radius: 6px; color: var(--ink) !important;
     }
     div[data-testid="stChatInput"] {
         border: 1px solid var(--line); border-radius: 8px; background: #ffffff;
