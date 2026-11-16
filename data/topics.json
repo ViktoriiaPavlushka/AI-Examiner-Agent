@@ -1,0 +1,19 @@
+[
+  "Токенізація: словникова, BPE, WordPiece, SentencePiece",
+  "Нормалізація тексту: стемінг та лематизація",
+  "Мішок слів (Bag of Words) і TF-IDF",
+  "N-грамні мовні моделі та перплексія",
+  "Векторні представлення слів: Word2Vec (CBOW, Skip-gram) і GloVe",
+  "Рекурентні нейронні мережі: RNN, LSTM, GRU",
+  "Механізм уваги (attention)",
+  "Архітектура Transformer",
+  "BERT та маскована мовна модель",
+  "GPT і авторегресивні мовні моделі",
+  "Класифікація текстів",
+  "Розпізнавання іменованих сутностей (NER)",
+  "Машинний переклад і метрика BLEU",
+  "Prompt engineering: zero-shot, few-shot, chain-of-thought",
+  "Retrieval-Augmented Generation (RAG)",
+  "LLM-агенти та виклик інструментів (function calling)",
+  "Тонке налаштування LLM: fine-tuning, LoRA, RLHF"
+]
